@@ -1,0 +1,44 @@
+.comment-thread-section {
+  border: 1px solid #c0c0c0;
+}
+
+.comment-thread-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-thread-section ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+.comment-thread-section p {
+  margin: 0;
+  padding: 0;
+}
+
+.comment-thread-section .comment-entry {
+  margin-bottom: 10px;
+}
+
+.comment-thread-section .comment-entry-header > span {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.comment-thread-section .comment-entry-header .comment-entry-avatar {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.comment-thread-section .comment-entry-header .comment-entry-author {
+  font-weight: bold;
+}
+
+.comment-thread-section .comment-entry .comment-entry-body p {
+}
+
