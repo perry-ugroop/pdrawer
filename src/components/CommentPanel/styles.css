@@ -6,3 +6,30 @@
     font-size: 1.2em;
 }
 
+.comment-panel .close-bar {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 4px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+}
+
+.comment-panel .close-bar .btn {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    text-transform: inherit;
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+.comment-panel .close-bar .btn:hover {
+    background-color: inherit;
+}
+

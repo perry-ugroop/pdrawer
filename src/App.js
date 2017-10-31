@@ -24,6 +24,10 @@ class App extends PureComponent {
     this.setState({ drawerOpen: false });
   };
 
+  handleClickClose = () => {
+    this.setState({ drawerOpen: false });
+  };
+
   componentDidMount = () => {
     this.setState({ data: utils.getData() });
   };
@@ -42,8 +46,10 @@ class App extends PureComponent {
             right
             onChange={this.handleOnDrawerChange}
             drawerStyle={{ backgroundColor: '#fff' }}
+	    noTouchClose
+	    handleWidth={0}
           >
-            <CommentPanel data={this.state.data} drawerWidth={constants.drawerWidth} />
+            <CommentPanel data={this.state.data} drawerWidth={constants.drawerWidth} onClickClose={this.handleClickClose} />
           </Drawer>
         </aside>
       </div>

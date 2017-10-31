@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import List, { ListItem } from 'material-ui/List';
 import ThreadSection from './component/ThreadSection'
+import Button from 'material-ui/Button';
 import withStyles from 'material-ui/styles/withStyles';
 import constants from '../../constants';
 import './styles.css'
@@ -14,7 +16,7 @@ const styles = {
 
 class CommentPanel extends PureComponent {
   render = () => {
-    const { data, classes } = this.props;
+    const { data, classes, onClickClose } = this.props;
 
     const threadList = [];
 
@@ -32,6 +34,7 @@ class CommentPanel extends PureComponent {
 
 
     return (<div className={`comment-panel ${classes.commentPanel}`}>
+      <div className="close-bar"><Button className="btn" disableRipple onClick={onClickClose}>[x]</Button></div>
       <section>
         <header>
           <h1>Comments</h1>
@@ -43,6 +46,10 @@ class CommentPanel extends PureComponent {
       </section>
     </div>);
   };
+};
+
+CommentPanel.propTypes = {
+  onClickClose: PropTypes.func,
 };
 
 export default withStyles(styles)(CommentPanel);
