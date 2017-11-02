@@ -1,5 +1,6 @@
 .comment-panel {
     font-size: 9pt;
+    overflow-x: hidden;
 }
 
 .comment-panel h1 {

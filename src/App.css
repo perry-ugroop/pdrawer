@@ -1,9 +1,27 @@
 .App {
   margin: 0;
   padding: 1em;
+  clear: both;
 }
 
 .App p {
   margin: 0 0 1em 0;
 }
 
+.App > .main {
+  width: 45%;
+  float: left;
+}
+
+.App > .otherContent {
+  width: 55%;
+  float: left;
+}
+
+.App p, .App h1 {
+  padding: 0 4px;
+}
+
+.App p {
+  text-align: justify;
+}
